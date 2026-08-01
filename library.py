@@ -18,7 +18,7 @@ class Library:
         self.loadTransactions()
 
     def loadBooks(self):
-        with open(r"Python University Library Management System\data\books.txt", "r") as file:
+        with open(r"data\books.txt", "r") as file:
             for line in file:
                 data = line.strip().split(",")
                 book = Book(int(data[0]), data[1].strip(), data[2].strip(), data[3].strip(), int(data[4]), data[5].strip().lower()=="true")
@@ -26,7 +26,7 @@ class Library:
 
 
     def loadMembers(self):
-        with open(r"Python University Library Management System\data\members.txt", "r") as file:
+        with open(r"data\members.txt", "r") as file:
                     for line in file:
                         data = line.strip().split(",")
                         if data[2]:
@@ -37,7 +37,7 @@ class Library:
                         self.members.append(member)
 
     def loadTransactions(self):
-        with open(r"Python University Library Management System\data\transactions.txt", "r") as file:
+        with open(r"data\transactions.txt", "r") as file:
                     for line in file:
                         data = line.strip().split(",")
                         transaction = Transaction(int(data[0]), int(data[1]), int(data[2]), date.fromisoformat(data[3].strip()), data[4].strip())
@@ -527,14 +527,14 @@ class Library:
               print(transaction.display_info())
 
     def saveData(self):
-         with open(r"Python University Library Management System\data\books.txt", "w") as file:
+         with open(r"data\books.txt", "w") as file:
               for book in self.books:
                    file.write(f"{book.display_info()}\n")
 
-         with open(r"Python University Library Management System\data\members.txt", "w") as file:
+         with open(r"data\members.txt", "w") as file:
               for member in self.members:
                    file.write(f"{member.display_info()}\n")
 
-         with open(r"Python University Library Management System\data\transactions.txt", "w") as file:
+         with open(r"data\transactions.txt", "w") as file:
               for transaction in self.transactions:
                    file.write(f"{transaction.display_info()}\n")
