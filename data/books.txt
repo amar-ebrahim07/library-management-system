@@ -1,0 +1,10 @@
+0,The Pragmatic Programmer,Andrew Hunt,Programming,1999,False
+1,Clean Code,Robert C. Martin,Programming,2008,False
+2,Introduction to Algorithms,Thomas H. Cormen,Computer Science,2022,False
+3,Computer Networks,Andrew S. Tanenbaum,Networking,2021,True
+4,Digital Communications,John G. Proakis,Communications,2008,False
+5,Python Crash Course,Eric Matthes,Programming,2023,True
+6,Signals and Systems,Alan V. Oppenheim,Engineering,1997,False
+7,Artificial Intelligence: A Modern Approach,Stuart Russell,AI,2021,True
+8,Operating System Concepts,Abraham Silberschatz,Computer Science,2018,False
+9,Data Structures and Algorithms in Python,Michael T. Goodrich,Programming,2013,True
